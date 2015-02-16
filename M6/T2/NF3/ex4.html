@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <title>Ejercicio 4</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <SCRIPT TYPE="text/javascript" src="ex4.js"></script>
+	<style type="text/css">
+		.TD1 {width: 100px; background-color: blue; alingn: center; }
+	</style>
+    </head>
+    <body>
+        <h2>Exercici 4: Scrollbars & Info</h2>
+        <ul>
+            <li>A l'exercici anterior crea un botó per tal que es puguin amagar o mostrar les barres de desplaçament.</li>
+            <li>A més a més mostra tota la informació que puguis del navegador de l'usuari</li>
+            <li>Mostra el numero de pagines visitades.</li>
+            <li>Mostra la url actual, el port i el protocol.</li>
+        </ul>
+	<table>
+		<TR><TD class="TD1" rowspan=3>
+				<button onClick="prcOpen();">Abrir</button></br>
+				<button onClick="prcReset();">Reset</button></br>
+				<button onClick="prcClose();">Cerrar</button></br>
+				</br>
+				<button onClick="prcBarres();">Mostrar/Ocultar Barres de desplazament</button>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="arriba();">Arriba</button></TD>
+			<TD></TD>
+			<TD class="TD1" rowspan=3><Div id="properties"></Div></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD><button onClick="izquierda();">Izquierda</button></TD>
+			<TD></TD>
+			<TD><button onClick="derecha();">Derecha</button></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="abajo();">Abajo</button></TD>
+			<TD></TD>
+		</TR>
+	</table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h2>Exercici 2</h2>
+            Modifica l'exercici anterior per tal de que l'iframe intenti carregar google, però des de l'script modifica el location per carregar la wikipedia.
+        <pre>
+            try {
+                document.getElementsByName('google')[0].location.href = "http://www.wikipedia.org";
+            } catch (e) { 
+                alert ("Error \n\n" + e); }
+        </pre>
+        <iframe id="ff" src="http://infomerce.com" name="google" height="100px" width="100%"></iframe>
+        <script>
+            try {
+                document.getElementsByName('google')[0].location.href = "http://www.wikipedia.org";
+            } catch (e) { 
+                alert ("Error \n\n" + e); }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <title>Ejercicio 3</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <SCRIPT TYPE="text/javascript" src="ex3.js"></script>
+        <!--[if IE]> <script> ie=true;</script><![endif]-->
+	<style type="text/css">
+		.TD1 {width: 100px; background-color: blue; alingn: center; }
+	</style>
+    </head>
+    <body>
+        <h2>Exercici 3: Moure finestra</h2>
+Crea una pàgina que tingui un botó que mogui la finestra 100 px cap a la dreta. Fes que la mida de la finestra es vagi fent cada vegada més petita s'arriva al costat dret de la pantalla.
+Amplia l'exercici anterior per tal que es pugui fer el mateix cap a dalt, cap a baix i cap a l'esquerra.        
+	<p> M6.NF3.Ejercicio 1 </p>
+	<p> Redimensiona la venta </p>
+	<table>
+		<TR><TD class="TD1" rowspan=3>
+				<button onClick="prcOpen();">Abrir</button></br>
+				<button onClick="prcReset();">Reset</button></br>
+				<button onClick="prcClose();">Cerrar</button></br>
+				</br>
+				<!--<button onClick="prcSendMsg();">Enviar mensaje</button>-->
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="arriba();">Arriba</button></TD>
+			<TD></TD>
+			<TD class="TD1" rowspan=3><Div id="properties"></Div></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD><button onClick="izquierda();">Izquierda</button></TD>
+			<TD></TD>
+			<TD><button onClick="derecha();">Derecha</button></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="abajo();">Abajo</button></TD>
+			<TD></TD>
+		</TR>
+	</table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h2>Exercici 1</h2>
+        Escriu una pàgina que contingui un iframe de 100px i carrega la url: "http://google.com". Crea un script i obtè la url del iframe.
+        <pre>
+            try {
+		alert(document.getElementsByName('google')[0].location.href);
+                 // alert(document.getElementById('ff').location.href);
+            } catch (e) { alert ("Error \n\n" + e); }
+            //document.getElementsByName('google')[0].location.href = "http://www.wikipedia.org";
+        </pre>
+        <p>Al usar: http://google.com</p>
+        <p><span style="color: red">Refused to display '</span>https://www.google.es/?gfe_rd=cr&ei=ispHVMtw7qzzB7TzgLgJ&gws_rd=ssl<span style="color: red">' in a frame because it set 'X-Frame-Options' to 'SAMEORIGIN'.</span></p>
+        
+        
+        <iframe id="ff" src="http://infomerce.com" name="google" height="100px" width="100%"></iframe>
+        <script>
+            try {
+		alert(document.getElementsByName('google')[0].location.href);
+                 // alert(document.getElementById('ff').location.href);
+            } catch (e) { alert ("Error \n\n" + e); }
+            //document.getElementsByName('google')[0].location.href = "http://www.wikipedia.org";
+        </script>
+    </body>
+</html>

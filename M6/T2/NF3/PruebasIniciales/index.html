@@ -1,0 +1,41 @@
+<html lang=es>
+<head>
+	<title>M6 UF1 NF3. Ejercicio 1</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="ej1.js"></script>
+	<style type="text/css">
+		.TD1 {width:100px; background-color: blue;" }
+	</style>
+</head>
+<body>
+	<p> M6.NF3.Ejercicio 1 </p>
+	<p> Redimensiona la venta </p>
+	<table>
+		<TR><TD class="TD1" rowspan=3>
+				<button onClick="prcOpen();">Abrir</button></br>
+				<button onClick="prcReset();">Reset</button></br>
+				<button onClick="prcClose();">Cerrar</button></br>
+				</br>
+				<button onClick="prcSendMsg();">Enviar mensaje</button>
+			</TD>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="arriba();">Arriba</button></TD>
+			<TD></TD>
+			<TD class="TD1" rowspan=3><Div id="properties"></Div></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD><button onClick="izquierda();">Izquierda</button></TD>
+			<TD></TD>
+			<TD><button onClick="derecha();">Derecha</button></TD>
+		</TR>
+		<TR>
+			<TD></TD>
+			<TD></TD>
+			<TD><button onClick="abajo();">Abajo</button></TD>
+			<TD></TD>
+		</TR>
+	</table>
+</body>
+</html>

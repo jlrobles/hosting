@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/10/2014, 20:45:41
+    Author     : jlrobles 46786783E
+*/
+
+footer {
+	position:fixed;
+	bottom:0;
+	width:98%;
+	height: 20px;
+	text-align: center;
+	letter-spacing: .1px;
+	font-family: 'Cagliostro', sans-serif;
+	font-style:normal;
+	font-size: .8em;
+	background: #CCCCFF;
+	background-size: 4%;
+	background-position: center right;
+	background-repeat: no-repeat;
+	
+	color: darkblue;
+	padding:3px 0px 0px 0px;
+	margin: 0px;
+}
+.select { background-color: #B22222; }

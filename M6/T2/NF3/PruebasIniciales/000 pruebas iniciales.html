@@ -1,0 +1,74 @@
+<html lang=es>
+<head>
+	<title>M6 UF1 NF3. Ejercicio 1</title>
+	<meta charset="UTF-8">
+	<SCRIPT TYPE="text/javascript">
+		var i = 0; // bloque de código a ejecutar.
+		var win = "";	// Variable para el control de la ventana emergente.
+		if (i==0){
+			var p1 = 'scrollbars=no,resizable=no,status=no,location=false,toolbar=no,menubar=no,';
+			var p2 = 'width=100,height=100,left=0,top=0';
+			win = window.open(' ', 'test', p1+p2);
+		}
+		if (i==1){
+			win = window.open('', 'exemple', 'width=300,height=300');
+			//win.focus();
+			
+				var div = win.document.createElement('div');
+		 		div.innerHTML = 'Hola a tots!';
+		 		div.style.fontSize = '30px';
+				//win.document.body.appendChild(div);
+				win.document.body.insertBefore( div, win.document.body.firstChild );
+		}
+		if (i==2){
+			//var f=document.getElementsByTagName('iFrame');
+			var f=document.getElementById('ff');
+			document.getElementById("ff").contentWindow.document.location.href="http://myLink.com"
+			f.src ="http://google.com";
+			//f.attr('src', loc);
+		}
+		//try {} catch(e) {}
+		//frames[0].location.href
+
+// win.onload = function() {
+//   var div = win.document.createElement('div');
+//   div.innerHTML = 'Hola a tots!';
+//   div.style.fontSize = '30px';
+//   win.document.body.insertBefore( div, win.document.body.firstChild );
+// }
+	</SCRIPT>
+</head>
+<body>
+	<p> hola </p>
+	<iframe id="ff" src="http://www.google.es" name="google" style="Height:100px; Width:-100px; " ></iframe>
+	<button onClick="win."></button>
+
+
+<script type="text/javascript">
+	//var v = document.getElementsByName('google')[0].location.href;
+	// var v = document.getElementsByName('google')[0].src;
+	// alert(v);
+	// document.getElementsByName('google')[0].src = "http://wikipedia.com";
+	
+	//document.getElementById('ff').src = "http://wikipedia.com";
+	var f = document.getElementById('ff'); alert(f.src); f.src = "http://wikipedia.com";
+
+		// try {
+		// 	alert(document.getElementsByName('google')[0].location.href);
+		// } catch (e) { alert ("Error \n\n" + e); }
+		// document.getElementsByName('google')[0].location.href = 
+		// 	"http://www.wikipedia.org";
+
+
+	// //document.onload = function() {
+	// document.getElementsByName('google')[0].onload = function() {
+	// 	try {
+	// 		frames[0].location.href="http://www.wikipedia.org";
+	// 	} catch (e) { alert ("Error \n\n" + e); }
+	// 	// try {
+	// 	// 	frames[0].location.href="http://www.google.es/prueba";
+	// 	// } catch (e) { alert ("Error \n\n" + e); }
+	//}
+</script>
+</body>
+</html>

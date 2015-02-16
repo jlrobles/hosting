@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=es>
+    <head>
+        <title>Ejercicio 5</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <SCRIPT TYPE="text/javascript" src="ex5.js"></script>
+	<style type="text/css">
+		.TD1 {width: 100px; background-color: blue; alingn: top; }
+	</style>
+    </head>
+    <body>
+        <h2>Exercici 5: Intercambio de mensajes</h2>
+        <ul>
+            <li>Crea una página en la que pregunti un text a l'usuari. Envia aquest text a una altre pestanya i escriu-la al html.</li>
+            <li>Modifica el programa anterior per tal que la finestra que reb el missatge comuniqui a la finestra que l'envia que l'ha rebut correctament.</li>
+        </ul>
+	<table>
+            <TR>
+                <TD class="TD1" valign="top">
+                    <button onClick="prcOpen();">Abrir</button></br>
+                    <button onClick="prcClose();">Cerrar</button></br>
+                </TD>
+                <TD valign="top">
+                    <textarea id="mm">Hola a Todos</textarea><br/>
+                    <button onClick="prcSendMessage();">enviarMissatge</button>
+                </TD>
+                <TD class="TD1"><Div id="Ret"></Div></TD>
+            </TR>
+	</table>
+</body>
+</html>
